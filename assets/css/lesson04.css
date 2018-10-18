@@ -1,0 +1,80 @@
+html {
+    position: relative;
+    min-height:100%;
+    background:linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.8)), url(http://arquiv.com/wp-content/uploads/2016/01/White_Pebbles_16-25mm__14737_zoom1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} .page-wrapper {
+    display: flex;
+    justify-content: space-between;
+} .main, .sidebar {
+    background-color: rgba(255, 255, 255, .8);
+} .main {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    width: 60%;
+    height: 252vh;
+} .sidebar {
+    width: 30%;
+    height: 90vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    padding-left: 1.5%;
+} body {
+    background-size: cover;
+    font-family: sans-serif;
+    padding: 10px;
+} h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+} h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    font-style: italic;
+} h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+} p {
+    font-family: 'Open Sans', sans-serif;
+} a {
+    color: rgb(96, 185, 197);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+} .zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
+    text-decoration: none;
+    background-color: #33333375;
+    color: #ffffff;
+    padding: 4px 10px 4px 10px;
+} .zen-validate-html:hover, .zen-validate-css:hover, .zen-license:hover, .zen-accessibility:hover, .zen-github:hover {
+    color: #ffffff;
+} a:hover {
+    color: rgb(52, 126, 136);
+} #design-selection {
+    width: 500px;
+}
+
+@media screen and (max-width: 600px) {
+    .page-wrapper {
+        display: inline;
+        justify-content: space-between;
+    } .main, .sidebar {
+        background-color: rgba(255, 255, 255, .8);
+    } .main {
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+        width: 90%;
+        height: 330vh;
+    } .sidebar {
+        width: 90%;
+        height: 90vh;
+        top: 15px;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+}
