@@ -1,20 +1,28 @@
 html {
     position: relative;
-    min-height:100%;
-    background:linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.8)), url(http://arquiv.com/wp-content/uploads/2016/01/White_Pebbles_16-25mm__14737_zoom1.jpg) no-repeat;
+    min-height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.8)), url(http://arquiv.com/wp-content/uploads/2016/01/White_Pebbles_16-25mm__14737_zoom1.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
 } .page-wrapper {
     display: flex;
     justify-content: space-between;
+} header {
+    padding: 50px;
+    text-align: center;
+    background: rgb(186, 226, 231, 0.8);
+    color: white;
+    font-size: 30px;
 } .main, .sidebar {
     background-color: rgba(255, 255, 255, .8);
 } .main {
+    margin-left: 1%;
+    margin-bottom: 1%;
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
     width: 60%;
-    height: 252vh;
+    height: 230vh;
 } .sidebar {
     width: 30%;
     height: 90vh;
@@ -22,17 +30,21 @@ html {
     position: sticky;
     top: 15px;
     padding-left: 1.5%;
+    margin-right: 1%;
+    line-height: 100%;
 } body {
+    margin: 0;
     background-size: cover;
     font-family: sans-serif;
     padding: 10px;
 } h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 40px;
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
 } h2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 28px;
+    font-family: 'Economica', sans-serif;
+    font-size: 40px;
     font-style: italic;
+    font-style: normal;
 } h3 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 28px;
@@ -42,6 +54,33 @@ html {
     color: rgb(96, 185, 197);
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
+} ul {
+    list-style-type: none;
+    padding-left: 20px;
+} li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 10px
+} li:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: FontAwesome;
+    content: "\f105";
+} .next:before {
+    content: "\f101";
+} .viewall:before {
+    content: "\f0c9";
+} .view-css:before {
+    content: "\f13c";
+} .css-resources:before {
+    content: "\f0ad";
+} .zen-faq:before {
+    content: "\f128";
+} .zen-submit:before {
+    content: "\f003";
+} .zen-translations:before {
+    content: "\f1ab";
 } .zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
     text-decoration: none;
     background-color: #33333375;
